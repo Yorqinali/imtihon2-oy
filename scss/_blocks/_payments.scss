@@ -1,0 +1,130 @@
+.container__payments {
+  display: flex;
+  width: 1275px;
+  height: 450px;
+  margin-left: 165px;
+  margin-top: 160px;
+  .container__payments-text {
+    width: 50%;
+    height: 100%;
+    h2 {
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -2.14286px;
+      color: #495567;
+      margin-right: 170px;
+      margin-top: 66px;
+    }
+    p {
+      font-family: "Lexend Deca";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      color: #939caa;
+      margin-right: 190px;
+      margin-top: 24px;
+      margin-bottom: 40px;
+    }
+    button {
+      background: #fcb72b;
+      border: 0;
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+      color: #ffffff;
+      width: 180px;
+      height: 53px; 
+    }
+    button:hover {
+      background: none;
+      border: 3px solid #fcb72b;
+      color: #fcb72b;
+    }
+  }
+  .container__payments-img {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-image: url(../../images/Mask.png);
+    background-repeat: no-repeat;
+    background-position: 550px 0;
+    .payments-line {
+      position: absolute;
+      top: 100px;
+      right: -300px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container__payments {
+    display: flex;
+    align-items: end;
+    flex-direction: column-reverse;
+    width: 100%;
+    margin-top: 900px;
+    margin-left: 0;;
+    .container__payments-img {
+      width: 80%;
+    }
+    .container__payments-text {
+      width: 100%;
+      text-align: center;
+      h2{
+        margin-right:155px;
+        margin-left:155px;
+        text-align: center;
+
+      }
+      p{
+        margin-right: 98px;
+        margin-left: 98px;
+
+        text-align: center;
+      }
+      button{
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width:376px) {
+  .container__payments{
+    width: 100%;
+    margin-top: 550px;
+
+    .container__payments-text{
+      width: 100%;
+      h2{
+        margin-left: 32px;
+        margin-right: 32px;
+      }
+      p{
+        margin-left: 32px;
+        margin-right: 32px;
+      }
+    }
+    .container__payments-img{
+      width: 100%;
+      text-align: center;
+      img{
+        width: 80%;
+      }
+      .payments-line{
+        top: 75px;
+        right: -45  0px;
+        width: 735px;
+        height: 100px;
+      }
+    }
+  }
+}

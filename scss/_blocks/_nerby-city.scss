@@ -1,0 +1,137 @@
+.container__nerby-city {
+  display: flex;
+  width: 1275px;
+  height: 450px;
+  margin-top: 155px;
+  .container__nerby-city-img {
+    background-image: url(../../images/Mask.png);
+    background-repeat: no-repeat;
+    background-position: -390px 0;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .nerby-city-line {
+      position: absolute;
+      top: 0;
+      left: -450px;
+    }
+  }
+  .container__nerby-city-text {
+    width: 50%;
+    height: 100%;
+    padding-left: 190px;
+    h2 {
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -2.14286px;
+      color: #495567;
+    }
+    p {
+      font-family: "Lexend Deca";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 25px;
+      color: #939caa;
+    }
+    button {
+      background: #fcb72b;
+      border: 0;
+      font-family: "Space Mono";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 25px;
+      text-align: center;
+      color: #ffffff;
+      width: 180px;
+      height: 53px;
+    }
+    button:hover {
+      background: none;
+      border: 3px solid #fcb72b;
+      color: #fcb72b;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container__nerby-city {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .container__nerby-city-img {
+      width: 100%;
+    }
+    .container__nerby-city-text {
+      padding-left: 0;
+      width: 100%;
+      text-align: center;
+      h2 {
+        margin-right: 155px;
+        margin-left: 155px;
+      }
+      p {
+        margin-right: 97px;
+        margin-left: 97px;
+      }
+      button {
+        margin-right: 294px;
+        margin-left: 294px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .container__nerby-city {
+    width: 100%;
+    .container__nerby-city-img {
+      width: 100%;
+      background-image: url(none);
+      img {
+        width: 80%;
+      }
+      .nerby-city-line {
+        left: -400px;
+        width: 735px;
+        height: 100px;
+      }
+    }
+    .container__nerby-city-text {
+      h2 {
+        font-family: "Space Mono";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        text-align: center;
+        letter-spacing: -1.42857px;
+        color: #495567;
+        margin-left: 32px;
+        margin-right: 32px;
+      }
+      p {
+        font-family: "Lexend Deca";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #939caa;
+        margin-left: 32px;
+        margin-right: 32px;
+      }
+      button{
+        margin-left: 97px;
+        margin-right: 97px;
+      }
+    }
+  }
+}
